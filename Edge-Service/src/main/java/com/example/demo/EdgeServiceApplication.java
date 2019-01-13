@@ -45,7 +45,7 @@ class Item {
 		this.name = name;
 	}
 
-	@FeignClient("item-catalog-service")
+	@FeignClient("item-catalog")
 	interface ItemClient {
 
 		@GetMapping("/items")
